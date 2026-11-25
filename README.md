@@ -48,8 +48,9 @@ dialogue choices, savegames, and the flight simulator. This is a personal-use pr
 
 - **Victory deck and cutscene lockstep.** Room navigation, crew conversations,
   dialogue branch choices, and cutscene skips replicate from host to client.
-- **Savegame mirroring.** Saving or loading on the host automatically mirrors
-  the save files to the client.
+- **Savegame mirroring.** Saving or loading on the host mirrors the save
+  files to the client. This overwrites matching savegame slots on the client,
+  so back up any single-player saves first.
 - **Flight simulator sync.** Launching any simulator mission from the Default,
   Black Box, or Alternate tabs launches the same mission on both machines.
 - **Connection status banner.** After intro movies finish, an on-screen banner
@@ -154,6 +155,13 @@ The script finds `i686-w64-mingw32-gcc` or MSYS2
 it to `lancopy\`.
 
 ## Installation and setup
+
+> [!WARNING]
+> **Back up your client savegames before playing.** Because host save and load
+> actions synchronize to the client, existing single-player save files on the
+> client (`.WSG` files and `WSG_NDX.WSG`) can be overwritten and permanently
+> lost. Copy your existing savegames to a separate folder first if you want to
+> keep them safe.
 
 Do not run GOG Galaxy "Verify / Repair" while the proxy is installed, because
 GOG Galaxy will overwrite `XanLib.dll`. Restore the original DLL first if you
