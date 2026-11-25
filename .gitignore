@@ -1,0 +1,32 @@
+# Imported game binaries and analysis databases
+ghidra/
+
+notes/unit1/decomp/
+notes/unit2/decomp/
+notes/unit3/out/
+notes/unit3/prologue_463890.txt
+notes/unit4_ctl/*.c
+notes/unit5/decomp/
+notes/unit6/decomp/
+
+# Local tooling state and internal dev logs
+.ori/
+STATUS.md
+decisions.tsv
+
+# Internal notes, dumps, and dev/test stubs
+notes/
+scripts/ghidra/
+scripts/testsender.py
+src/toolchain_probe.c
+src/wc3net/selftest.c
+
+# Binaries, build artifacts, archives
+*.dll
+*.exe
+*.o
+*.bin
+*.zip
+src/wc3net/selftest
+
+.DS_Store
